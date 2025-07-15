@@ -1,0 +1,82 @@
+// 🔄 Flex Centering
+@mixin flex-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@mixin flex-column-center {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+// 📝 Typography
+@mixin heading-xl {
+  font-family: $font-heading;
+  font-size: $font-size-xxl;
+  font-weight: $font-weight-bold;
+  line-height: $line-height-tight;
+  color: $color-text-dark;
+}
+
+@mixin subtitle {
+  font-family: $font-heading;
+  font-size: $font-size-lg;
+  font-weight: $font-weight-semibold;
+  color: $color-accent;
+  line-height: $line-height-normal;
+}
+
+@mixin body-text {
+  font-family: $font-body;
+  font-size: $font-size-md;
+  line-height: $line-height-normal;
+  color: $color-text-dark;
+}
+
+// 🎀 Button
+@mixin button-style {
+  background-color: $color-primary;
+  color: $color-text-dark;
+  border: none;
+  padding: 0.75rem 1.5rem;
+  border-radius: 0.75rem;
+  font-family: $font-body;
+  font-weight: $font-weight-semibold;
+  cursor: pointer;
+  transition: all 0.2s ease;
+
+  &:hover {
+    background-color: $color-highlight;
+    box-shadow: 0 4px 10px $color-shadow;
+    transform: scale(1.03);
+  }
+}
+
+// 🧁 Card or Section
+@mixin soft-box {
+  background-color: $color-muted;
+  padding: 2rem;
+  border-radius: 1.25rem;
+  box-shadow: 0 4px 8px $color-shadow;
+}
+
+// 📱 Responsive Text
+@mixin fluid-text($min, $max) {
+  font-size: clamp($min, 2vw, $max);
+}
+
+// 📏 Media Query Helper
+@mixin respond-to($breakpoint) {
+  @if $breakpoint == "tablet" {
+    @media (max-width: 768px) {
+      @content;
+    }
+  } @else if $breakpoint == "mobile" {
+    @media (max-width: 480px) {
+      @content;
+    }
+  }
+}
