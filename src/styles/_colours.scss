@@ -1,23 +1,30 @@
 // 🎨 Brand Colors
-$color-primary: #fadadd; // Blush Pink – main brand color
-$color-accent: #d4a5a5; // Dusty Rose – secondary accents
-$color-highlight: #f7a8a8; // Sunset Coral – for CTA hovers or subtle pop
+$color-primary: #f7bfc8; // 💗 Soft Rose – warmer, more contrast than blush pink
+$color-accent: #c38b8b; // 🌷 Rosewood – a deeper dusty rose
+$color-highlight: #f58484; // 🍓 Coral Pop – more vivid for stronger hover effects
 
 // 🌿 Neutrals & Backgrounds
-$color-background: #fff7f0; // Creamy Ivory – global page background
-$color-secondary: #d9d6f7; // Lavender Mist – section bg or card highlights
-$color-muted: #ede7e3; // Mist Beige – card backgrounds, subtle containers
-$color-border: #e3d7d7; // For inputs, cards, or dividers
+$color-background: #fff2e9; // 🍦 Ivory Peach – soft and warm background
+$color-secondary: #d2caf4; // 🪻 Powder Lavender – subtle but clear
+$color-muted: #e9e0dc; // 🪵 Warm Beige – more contrast for cards/containers
+$color-border: #d6c2c2; // 🌫️ Soft Taupe – defined borders for inputs/cards
 
 // 📝 Text
-$color-text-dark: #5e4b4b; // Warm Mocha – main paragraph text
-$color-text-light: #ffffff; // For text on dark/bg buttons
+$color-text-dark: #4e3c3c; // ☕️ Cocoa Mocha – deeper for readability
+$color-text-light: #ffffff; // ❄️ For buttons or dark backgrounds
 
 // 🛎️ Status / Utility Colors
-$color-info: #d0e7f4; // Light Bluebell – for banners, info cards
-$color-success: #b3e9c7; // Mint Green – for success messages/toasts
-$color-warning: #ffe1a8; // Soft Yellow – for alerts or validations
-$color-error: #f2a8a8; // Muted Coral Red – for form errors or warnings
+$color-info: #b8dff2; // 🧊 Clear Bluebell – brighter info boxes
+$color-success: #a3dfba; // 🌱 Soft Mint – fresh, more visible
+$color-warning: #ffdc96; // 🍋 Pastel Yellow – gentle alert tone
+$color-error: #ef8888; // 🍅 Dusty Red – soft but readable for errors
 
 // 🖤 Shadows
-$color-shadow: rgba(0, 0, 0, 0.08); // Soft card/button shadows
+$color-shadow: rgba(0, 0, 0, 0.12); // ✨ Deeper shadow for better definition
+
+// 📖 Resume Storybook Additions
+$color-paper: #f8ecd7; // 📜 Soft Paper – background for chapters
+$color-parchment: #f6f1e7; // 📄 Aged Parchment – main storybook bg
+$color-ink: #3b2f2f; // 🖋️ Deep Ink – vintage text color
+$color-chapter-border: #e5d8c5; // 📏 Chapter Box Border – elegant and subtle
+$color-chapter-label: #a3876c; // 🔖 Chapter Tag Label – warm accent

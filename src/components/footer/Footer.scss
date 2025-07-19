@@ -1,0 +1,54 @@
+@import "@/styles/variables";
+
+.footer-wrapper {
+  background-color: $color-muted;
+  padding: 2rem 1rem;
+  text-align: center;
+  font-family: $font-body;
+  font-size: $font-size-sm;
+  color: $color-text-dark;
+  border-top: 1px solid $color-border;
+  box-shadow: 0 -4px 6px $color-shadow;
+}
+
+.footer-container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.footer-text {
+  margin: 0;
+  color: $color-text-dark;
+
+  .heart {
+    display: inline-block;
+    animation: pulse-heart 2s infinite;
+  }
+}
+
+@keyframes pulse-heart {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.1);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+.footer-socials {
+  margin-top: 0.5rem;
+
+  a {
+    margin: 0 0.5rem;
+    color: $color-text-dark;
+    font-size: 1.5rem;
+    transition: color 0.3s ease;
+
+    &:hover {
+      color: $color-accent;
+    }
+  }
+}
